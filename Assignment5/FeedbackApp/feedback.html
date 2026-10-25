@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+
+<h2>Feedback Form</h2>
+
+<form action="submitFeedback" method="post">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="type">Feedback Type:</label>
+    <select id="type" name="type" required>
+        <option value="Complaint">Complaint</option>
+        <option value="Suggestion">Suggestion</option>
+        <option value="Compliment">Compliment</option>
+    </select>
+    <br><br>
+
+    <label for="comments">Comments:</label>
+    <br>
+    <textarea id="comments" name="comments"
+              rows="5" cols="30" required></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit Feedback">
+
+</form>
+
+</body>
+</html>
